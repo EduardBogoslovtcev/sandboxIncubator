@@ -15,16 +15,7 @@ function arrayDiff(a, b) {
     while (j < b.length) {
       if (a[i] === b[j]) {
         a.splice(i, 1);
-      } else {
-        ++j;
-      }
-    }
-  }
-  for(let i = 0; i<a.length; i++){
-    let j = 0;
-    while (j < b.length) {
-      if (a[i] === b[j]) {
-        a.splice(i, 1);
+        i--;
       } else {
         ++j;
       }
