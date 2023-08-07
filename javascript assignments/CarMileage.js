@@ -1,5 +1,5 @@
 /*
-
+,,l,l
 */
 const isInteresting = (n, awes) => {
   if (n < 98) return 0;
