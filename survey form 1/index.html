@@ -2,11 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Registration Form</title>
+    <title>Survey Form by EduardB</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Page Title</h1>
+    <h1 id="title">Survey Form by EduardB</h1>
+    <p id="description">Thank you for taking the time to fill my first food delivery form!</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required/></label>
+      <label for="email" id="email-label">Email <input id="email" type="email" placeholder="Enter your email" required/></label>
+      <label for="number" id="number-label">Number <input id="number" type="number" min="1" max="999" placeholder="1-999"/></label>
+      <label for="dropdown">What do you like?
+        <select id="dropdown">
+          <option disabled selected value>select one</option>
+          <option value="1">Pizza</option>
+          <option value="2">French fries</option>
+        </select>
+      </label>
+      <label for="radio1">Pick up<input id="radio1" type="radio" name="choose" value="pick-up"/></label>
+      <label for="radio2">Delivery<input id="radio2" type="radio" name="choose" value="delivery"/></label>
+      <label for="sauce">Extra sauce <input id="sauce" type="checkbox" value="sauce-true"/></label>
+      <label for="cola">Cola <input id="cola" type="checkbox" value="cola-true"/></label>
+      <label for="comment">Any comments or suggestions?<textarea id="comment" placeholder="Enter your comment here..." rows="3" cols="30"></textarea><label>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
   </body>
-
 </html>
